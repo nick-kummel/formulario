@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    /* muda a margem  */
+    padding: 0;
+    /* deixa com espaço */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* deixa mais "destacado" */
+    line-height: 1.6;
+    /* espaço entre as palavras */
+    background-color: rgb(75, 18, 173);
+    /* muda a cor do fundo */
+}
+
+nav {
+    position: fixed;
+    /* deixa a barra de pesquisa fixado */
+    top: 0;
+    width: 100%;
+    background-color: #ff050596;
+    /* muda a cor do título */
+    padding: 20px 0;
+    /* muda o espaço do título */
+
+}
+
+nav ul {
+    list-style-type: none;
+    /* marcadores */
+    display: flex;
+    /* deixar os tópicos na orizontal  */
+    justify-content: center;
+    /* deixa os tópicos no centro  */
+}
+
+nav ul li {
+    margin: 0 20px;
+    /* muda a margem dos tópicos */
+}
+
+
+nav ul li a {
+    color: azure;
+    /* muda a cor do tópico */
+    text-decoration: none;
+    /* sublinhar os tópicos  */
+    font-size: 18px;
+    /* aumentou o tamanho do quadrado dos tópícos */
+    padding: 10px;
+    /* deixa o quadrado do título mais espaçado */
+    transition: color 0.5s;
+    /* tempo que vai ficar sublinhado */
+}
+
+nav ul li a:houver {
+    color: rgb(0, 0, 0);
+}
+
+section:not(#home) {
+    padding: 100px 20px;
+    /* deixa com espaço do texto da imagem*/
+    text-align: center;
+    /* deixa tudo no centro  */
+    display: flex;
+    /* muda a margem da imagem */
+    justify-content: center;
+    /* deixa o texto mais no centro  */
+    align-items: center;
+    /* linha no centro  */
+    height: 100vh;
+    /* deixa a margem de cima da foto com mais espaço  */
+}
+
+#home {
+    /* background-color: #6281d8;  */
+    background-image: url(https://cosmonerd.com.br/uploads//2018/05/cobra-kai-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #eeeeee;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cotent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.content .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.content .text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.content .text p {
+    font-size: 1.1em;
+    color: rgb(12, 12, 2);
+}
+
+#services {
+    background-color: azure;
+}
+
+#about {
+    background-color: rgb(196, 23, 23);
+
+}
+
+#contact {
+    background-color: #fffcfc;
+}
+
+.cta-button {
+    margin-top: 30px;
+    background-color: rgba(215, 221, 216, 0.466);
+    color: rgb(209, 40, 27);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: backgroud-color 1s ease, transform 1s ease;
+}
